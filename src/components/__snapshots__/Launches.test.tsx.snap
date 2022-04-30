@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Launches /> renders without crashing given the required props 1`] = `
+<Styled(section)>
+  <h3>
+    Upcoming
+  </h3>
+  <div
+    className="launches"
+  >
+    <Launch
+      key="0"
+      launch={
+        Object {
+          "date_utc": "2006-03-24T22:30:00.000Z",
+          "id": "5eb87cd9ffd86e000604b32a",
+          "name": "FalconSat",
+          "rocket": Object {
+            "flickr_images": Array [
+              "img",
+            ],
+            "name": "Starship",
+          },
+          "success": false,
+          "upcoming": false,
+        }
+      }
+    />
+  </div>
+</Styled(section)>
+`;
+
+exports[`<Launches /> shows no launches when it doesnt fetch launches 1`] = `
+<Styled(section)>
+  <h3>
+    Upcoming
+  </h3>
+  <div
+    className="launches"
+  >
+    No launches
+  </div>
+</Styled(section)>
+`;
+
+exports[`<Launches /> shows no launches when it is loading 1`] = `
+<Styled(section)>
+  <h3>
+    Upcoming
+  </h3>
+  <h4>
+    Loading...
+  </h4>
+</Styled(section)>
+`;
