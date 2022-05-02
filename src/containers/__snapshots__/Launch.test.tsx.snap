@@ -1,5 +1,495 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Launch /> expected to match snapshot when favorite is toggled favorite is clicked 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Launch
+    launch={
+      Object {
+        "date_utc": "2006-03-24T22:30:00.000Z",
+        "id": "5eb87cd9ffd86e000604b32a",
+        "name": "FalconSat",
+        "rocket": Object {
+          "flickr_images": Array [
+            "img",
+          ],
+          "name": "Starship",
+        },
+        "success": undefined,
+        "upcoming": false,
+      }
+    }
+  >
+    <Styled(div)>
+      <Insertion
+        cache={
+          Object {
+            "insert": [Function],
+            "inserted": Object {
+              "9uwaqv": true,
+            },
+            "key": "css",
+            "nonce": undefined,
+            "registered": Object {},
+            "sheet": StyleSheet {
+              "_alreadyInsertedOrderInsensitiveRule": true,
+              "_insertTag": [Function],
+              "before": null,
+              "container": <head>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:10px;background-color:#ceb92c;padding:10px;color:#2a2a2a;border-radius:10px;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv img{height:80px;object-fit:cover;margin-right:8px;border-radius:10px;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .content{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .favorite-button{border-color:#2a2a2a;cursor:pointer;background-color:transparent;padding:8px;border-radius:10px;margin-right:8px;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .favorite-button.favorite{background-color:#2a2a2a;color:#fee36e;}
+                </style>
+              </head>,
+              "ctr": 6,
+              "insertionPoint": undefined,
+              "isSpeedy": false,
+              "key": "css",
+              "nonce": undefined,
+              "prepend": undefined,
+              "tags": Array [
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:10px;background-color:#ceb92c;padding:10px;color:#2a2a2a;border-radius:10px;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv img{height:80px;object-fit:cover;margin-right:8px;border-radius:10px;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .content{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .favorite-button{border-color:#2a2a2a;cursor:pointer;background-color:transparent;padding:8px;border-radius:10px;margin-right:8px;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .favorite-button.favorite{background-color:#2a2a2a;color:#fee36e;}
+                </style>,
+              ],
+            },
+          }
+        }
+        isStringTag={true}
+        serialized={
+          Object {
+            "map": undefined,
+            "name": "9uwaqv",
+            "next": undefined,
+            "styles": "
+  display: flex;
+  align-items: center;
+  img {
+    height: 80px;
+    object-fit: cover;
+    margin-right: 8px;
+    border-radius: 10px;
+  }
+  .content {
+    flex-grow: 1;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .favorite-button {
+    border-color: #2a2a2a;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 10px;
+    margin-right: 8px;
+
+    &.favorite {
+      background-color: #2a2a2a;
+      color: #fee36e;
+    }
+  }
+
+  margin-bottom: 10px;
+  background-color: #ceb92c;
+  padding: 10px;
+  color: #2a2a2a;
+  border-radius: 10px;
+",
+            "toString": [Function],
+          }
+        }
+      />
+      <div
+        className="css-9uwaqv"
+      >
+        <button
+          className="favorite-button "
+          name="favorite-button"
+          onClick={[Function]}
+        >
+          Favorite
+        </button>
+        <img
+          alt="launch-img"
+          src="img"
+        />
+        <div
+          className="content"
+        >
+          <div
+            className="header"
+          >
+            <div>
+              <b>
+                Name:
+              </b>
+               
+              FalconSat
+            </div>
+            <div>
+              <b>
+                Year:
+              </b>
+               
+              2006
+            </div>
+          </div>
+          <div>
+            <b>
+              Success:
+            </b>
+             
+            Not launched yet
+          </div>
+          <div>
+            <b>
+              Rocket name:
+            </b>
+             
+            Starship
+          </div>
+        </div>
+      </div>
+    </Styled(div)>
+  </Launch>
+</Provider>
+`;
+
+exports[`<Launch /> expected to match snapshot when favorite is toggled favorite is clicked again 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Launch
+    launch={
+      Object {
+        "date_utc": "2006-03-24T22:30:00.000Z",
+        "id": "5eb87cd9ffd86e000604b32a",
+        "name": "FalconSat",
+        "rocket": Object {
+          "flickr_images": Array [
+            "img",
+          ],
+          "name": "Starship",
+        },
+        "success": undefined,
+        "upcoming": false,
+      }
+    }
+  >
+    <Styled(div)>
+      <Insertion
+        cache={
+          Object {
+            "insert": [Function],
+            "inserted": Object {
+              "9uwaqv": true,
+            },
+            "key": "css",
+            "nonce": undefined,
+            "registered": Object {},
+            "sheet": StyleSheet {
+              "_alreadyInsertedOrderInsensitiveRule": true,
+              "_insertTag": [Function],
+              "before": null,
+              "container": <head>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:10px;background-color:#ceb92c;padding:10px;color:#2a2a2a;border-radius:10px;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv img{height:80px;object-fit:cover;margin-right:8px;border-radius:10px;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .content{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .favorite-button{border-color:#2a2a2a;cursor:pointer;background-color:transparent;padding:8px;border-radius:10px;margin-right:8px;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .favorite-button.favorite{background-color:#2a2a2a;color:#fee36e;}
+                </style>
+              </head>,
+              "ctr": 6,
+              "insertionPoint": undefined,
+              "isSpeedy": false,
+              "key": "css",
+              "nonce": undefined,
+              "prepend": undefined,
+              "tags": Array [
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:10px;background-color:#ceb92c;padding:10px;color:#2a2a2a;border-radius:10px;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv img{height:80px;object-fit:cover;margin-right:8px;border-radius:10px;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .content{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .favorite-button{border-color:#2a2a2a;cursor:pointer;background-color:transparent;padding:8px;border-radius:10px;margin-right:8px;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .favorite-button.favorite{background-color:#2a2a2a;color:#fee36e;}
+                </style>,
+              ],
+            },
+          }
+        }
+        isStringTag={true}
+        serialized={
+          Object {
+            "map": undefined,
+            "name": "9uwaqv",
+            "next": undefined,
+            "styles": "
+  display: flex;
+  align-items: center;
+  img {
+    height: 80px;
+    object-fit: cover;
+    margin-right: 8px;
+    border-radius: 10px;
+  }
+  .content {
+    flex-grow: 1;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .favorite-button {
+    border-color: #2a2a2a;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 10px;
+    margin-right: 8px;
+
+    &.favorite {
+      background-color: #2a2a2a;
+      color: #fee36e;
+    }
+  }
+
+  margin-bottom: 10px;
+  background-color: #ceb92c;
+  padding: 10px;
+  color: #2a2a2a;
+  border-radius: 10px;
+",
+            "toString": [Function],
+          }
+        }
+      />
+      <div
+        className="css-9uwaqv"
+      >
+        <button
+          className="favorite-button "
+          name="favorite-button"
+          onClick={[Function]}
+        >
+          Favorite
+        </button>
+        <img
+          alt="launch-img"
+          src="img"
+        />
+        <div
+          className="content"
+        >
+          <div
+            className="header"
+          >
+            <div>
+              <b>
+                Name:
+              </b>
+               
+              FalconSat
+            </div>
+            <div>
+              <b>
+                Year:
+              </b>
+               
+              2006
+            </div>
+          </div>
+          <div>
+            <b>
+              Success:
+            </b>
+             
+            Not launched yet
+          </div>
+          <div>
+            <b>
+              Rocket name:
+            </b>
+             
+            Starship
+          </div>
+        </div>
+      </div>
+    </Styled(div)>
+  </Launch>
+</Provider>
+`;
+
 exports[`<Launch /> expected to match snapshot when launch failed 1`] = `
 <Provider
   store={
@@ -193,7 +683,8 @@ exports[`<Launch /> expected to match snapshot when launch failed 1`] = `
         className="css-9uwaqv"
       >
         <button
-          className="favorite-button favorite"
+          className="favorite-button "
+          name="favorite-button"
           onClick={[Function]}
         >
           Favorite
@@ -437,7 +928,8 @@ exports[`<Launch /> expected to match snapshot when launch succeeded 1`] = `
         className="css-9uwaqv"
       >
         <button
-          className="favorite-button favorite"
+          className="favorite-button "
+          name="favorite-button"
           onClick={[Function]}
         >
           Favorite
@@ -681,7 +1173,253 @@ exports[`<Launch /> expected to match snapshot when launch success is null 1`] =
         className="css-9uwaqv"
       >
         <button
-          className="favorite-button favorite"
+          className="favorite-button "
+          name="favorite-button"
+          onClick={[Function]}
+        >
+          Favorite
+        </button>
+        <img
+          alt="launch-img"
+          src="img"
+        />
+        <div
+          className="content"
+        >
+          <div
+            className="header"
+          >
+            <div>
+              <b>
+                Name:
+              </b>
+               
+              FalconSat
+            </div>
+            <div>
+              <b>
+                Year:
+              </b>
+               
+              2006
+            </div>
+          </div>
+          <div>
+            <b>
+              Success:
+            </b>
+             
+            Not launched yet
+          </div>
+          <div>
+            <b>
+              Rocket name:
+            </b>
+             
+            Starship
+          </div>
+        </div>
+      </div>
+    </Styled(div)>
+  </Launch>
+</Provider>
+`;
+
+exports[`<Launch /> expected to match snapshot when launch success is null 2`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Launch
+    launch={
+      Object {
+        "date_utc": "2006-03-24T22:30:00.000Z",
+        "id": "5eb87cd9ffd86e000604b32a",
+        "name": "FalconSat",
+        "rocket": Object {
+          "flickr_images": Array [
+            "img",
+          ],
+          "name": "Starship",
+        },
+        "success": undefined,
+        "upcoming": false,
+      }
+    }
+  >
+    <Styled(div)>
+      <Insertion
+        cache={
+          Object {
+            "insert": [Function],
+            "inserted": Object {
+              "9uwaqv": true,
+            },
+            "key": "css",
+            "nonce": undefined,
+            "registered": Object {},
+            "sheet": StyleSheet {
+              "_alreadyInsertedOrderInsensitiveRule": true,
+              "_insertTag": [Function],
+              "before": null,
+              "container": <head>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:10px;background-color:#ceb92c;padding:10px;color:#2a2a2a;border-radius:10px;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv img{height:80px;object-fit:cover;margin-right:8px;border-radius:10px;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .content{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .favorite-button{border-color:#2a2a2a;cursor:pointer;background-color:transparent;padding:8px;border-radius:10px;margin-right:8px;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .favorite-button.favorite{background-color:#2a2a2a;color:#fee36e;}
+                </style>
+              </head>,
+              "ctr": 6,
+              "insertionPoint": undefined,
+              "isSpeedy": false,
+              "key": "css",
+              "nonce": undefined,
+              "prepend": undefined,
+              "tags": Array [
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:10px;background-color:#ceb92c;padding:10px;color:#2a2a2a;border-radius:10px;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv img{height:80px;object-fit:cover;margin-right:8px;border-radius:10px;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .content{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .favorite-button{border-color:#2a2a2a;cursor:pointer;background-color:transparent;padding:8px;border-radius:10px;margin-right:8px;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .css-9uwaqv .favorite-button.favorite{background-color:#2a2a2a;color:#fee36e;}
+                </style>,
+              ],
+            },
+          }
+        }
+        isStringTag={true}
+        serialized={
+          Object {
+            "map": undefined,
+            "name": "9uwaqv",
+            "next": undefined,
+            "styles": "
+  display: flex;
+  align-items: center;
+  img {
+    height: 80px;
+    object-fit: cover;
+    margin-right: 8px;
+    border-radius: 10px;
+  }
+  .content {
+    flex-grow: 1;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .favorite-button {
+    border-color: #2a2a2a;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 10px;
+    margin-right: 8px;
+
+    &.favorite {
+      background-color: #2a2a2a;
+      color: #fee36e;
+    }
+  }
+
+  margin-bottom: 10px;
+  background-color: #ceb92c;
+  padding: 10px;
+  color: #2a2a2a;
+  border-radius: 10px;
+",
+            "toString": [Function],
+          }
+        }
+      />
+      <div
+        className="css-9uwaqv"
+      >
+        <button
+          className="favorite-button "
+          name="favorite-button"
           onClick={[Function]}
         >
           Favorite

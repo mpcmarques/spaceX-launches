@@ -50,6 +50,7 @@ const Launch: React.FC<{ launch: LaunchType }> = ({ launch }) => {
   return (
     <LaunchContainer>
       <button
+        name="favorite-button"
         className={`favorite-button ${favorite ? "favorite" : ""}`}
         onClick={() => dispatch(toogleFavorite(launch))}
       >

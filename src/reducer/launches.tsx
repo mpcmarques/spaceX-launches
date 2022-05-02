@@ -1,6 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../store";
 import { Filter, Launch } from "../types";
+import fetch from "cross-fetch";
 
 export interface State {
   loading: boolean;
