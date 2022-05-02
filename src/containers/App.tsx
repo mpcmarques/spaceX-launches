@@ -112,6 +112,7 @@ function App() {
         <h2>Filters</h2>
         <div className="filters-content">
           <DatePicker
+            id="starting-date-picker"
             selected={selectedStartingDate}
             onChange={(date) => {
               setSelectedStartingDate(date);
@@ -123,6 +124,7 @@ function App() {
           />
 
           <DatePicker
+            id="ending-date-picker"
             selected={selectedEndingDate}
             onChange={(date) => {
               setSelectedEndingDate(date);
@@ -134,6 +136,7 @@ function App() {
           />
 
           <button
+            id="success-button"
             className={filter.success ? "active" : ""}
             onClick={() => {
               if (filter.success == null || filter.success === false) {
@@ -146,6 +149,7 @@ function App() {
             Succeded
           </button>
           <button
+            id="failed-button"
             className={filter.success === false ? "active" : ""}
             onClick={() => {
               if (filter.success == null || filter.success === true) {
@@ -158,6 +162,7 @@ function App() {
             Unsucceded
           </button>
           <button
+            id="past-button"
             className={filter.upcoming === false ? "active" : ""}
             onClick={() => {
               if (filter.upcoming == null || filter.upcoming === true) {
@@ -170,6 +175,7 @@ function App() {
             Past
           </button>
           <button
+            id="upcoming-button"
             className={filter.upcoming ? "active" : ""}
             onClick={() => {
               if (filter.upcoming == null || filter.upcoming === false) {

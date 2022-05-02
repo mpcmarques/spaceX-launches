@@ -6,13 +6,15 @@ import configureMockStore, { MockStoreEnhanced } from "redux-mock-store";
 import { Provider } from "react-redux";
 import { Launch as LaunchType } from "../types";
 import { toogleFavorite } from "../reducer/favorites";
-import { useAppDispatch } from "../store";
 
 describe("<Launch />", () => {
   let store: MockStoreEnhanced<unknown, {}>;
 
-  function setup(launch: LaunchType): JSX.Element {
-    store = configureMockStore()({ favorites: [] });
+  function setup(
+    launch: LaunchType,
+    favorites: Array<LaunchType> = []
+  ): JSX.Element {
+    store = configureMockStore()({ favorites: favorites });
     return (
       <Provider store={store}>
         <Launch launch={launch} />
@@ -105,26 +107,31 @@ describe("<Launch />", () => {
         flickr_images: ["img"],
       },
     };
-    const wrapper = mount(setup(launch));
-
-    expect(wrapper.find(".favorite-button").hasClass("favorite")).toEqual(
-      false
-    );
 
     it("favorite is clicked", () => {
+      const wrapper = mount(setup(launch, [launch]));
+
       wrapper.find(".favorite-button").simulate("click");
 
-      const newWrapper = wrapper.update();
+      expect(wrapper.find(".favorite-button").hasClass("favorite")).toEqual(
+        true
+      );
 
-      expect(toJson(newWrapper)).toMatchSnapshot();
+      expect(toJson(wrapper)).toMatchSnapshot();
     });
 
     it("favorite is clicked again", () => {
-      wrapper.find(".favorite-button").simulate("click");
+      const wrapper = mount(setup(launch));
 
-      const newWrapper = wrapper.update();
+      wrapper
+        .find(".favorite-button")
+        .simulate("click", () => store.dispatch(toogleFavorite(launch)));
 
-      expect(toJson(newWrapper)).toMatchSnapshot();
+      expect(wrapper.find(".favorite-button").hasClass("favorite")).toEqual(
+        false
+      );
+
+      expect(toJson(wrapper)).toMatchSnapshot();
     });
   });
 });

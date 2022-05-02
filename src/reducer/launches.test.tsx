@@ -1,12 +1,11 @@
 import React from "react";
-import fetch from "cross-fetch";
+import mockFetch from "cross-fetch";
 import reducer, { initialState, fetchData } from "./launches";
 import { Launch as LaunchType } from "../types";
 
 describe("Reducer:launches", () => {
-  jest.mock("cross-fetch");
-
-  const mockedFech = fetch as jest.Mocked<typeof fetch>;
+  // @ts-ignore
+  const mockedFetch: jest.Mock<unknown> = jest.spyOn(window, "fetch");
 
   it("should set initial state by default", () => {
     const action = { type: "unknown" };
@@ -76,7 +75,7 @@ describe("Reducer:launches", () => {
 
     afterAll(() => {
       dispatch.mockClear();
-    //   mockedFech.mockClear();
+      mockedFetch.mockClear();
     });
 
     const launch: LaunchType = {
@@ -88,28 +87,26 @@ describe("Reducer:launches", () => {
     };
 
     it("should fetch the launches", async () => {
-    //   mockedFech.mockReturnValueOnce(
-    //     Promise.resolve({
-    //       status: 200,
-    //       json() {
-    //         return Promise.resolve([launch]);
-    //       },
-    //     })
-    //   );
-    //   await fetchData({})(dispatch, () => {}, {});
+      mockedFetch.mockReturnValueOnce(
+        Promise.resolve({
+          status: 200,
+          json() {
+            return Promise.resolve([launch]);
+          },
+        })
+      );
+      await fetchData({})(dispatch, () => {}, {});
 
-    //   const expected = expect.arrayContaining([
-    //     expect.objectContaining({
-    //       type: fetchData.pending.type,
-    //       meta: expect.objectContaining({ arg: {} }),
-    //     }),
-    //     expect.objectContaining({
-    //       type: fetchData.fulfilled.type,
-    //       meta: expect.objectContaining({ arg: {} }),
-    //       payload: [launch],
-    //     }),
-    //   ]);
-    //   expect(dispatch.mock.calls.flat()).toEqual(expected);
+      const expected = expect.arrayContaining([
+        expect.objectContaining({
+          type: fetchData.pending.type,
+        }),
+        expect.objectContaining({
+          type: fetchData.fulfilled.type,
+        }),
+      ]);
+
+      expect(dispatch.mock.calls.flat()).toEqual(expected);
     });
   });
 });

@@ -29,13 +29,28 @@ export const fetchData = createAsyncThunk(
         },
         body: JSON.stringify({
           query: { ...query },
-          options: { populate: ["rocket"], pagination: false },
+          options: {
+            populate: [
+              {
+                path: "rocket",
+              },
+            ],
+            select: [
+              "name",
+              "date_utc",
+              "upcoming",
+              "id",
+              "rocket",
+              "success",
+              "selected",
+            ],
+            pagination: false,
+          },
         }),
         // @ts-ignore
       }
     );
 
-    // @ts-ignore
     const { docs }: { docs: Array<Launch> } = await request.json();
 
     return docs;

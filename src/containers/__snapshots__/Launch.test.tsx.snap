@@ -193,7 +193,7 @@ exports[`<Launch /> expected to match snapshot when favorite is toggled favorite
         className="css-9uwaqv"
       >
         <button
-          className="favorite-button "
+          className="favorite-button favorite"
           name="favorite-button"
           onClick={[Function]}
         >
