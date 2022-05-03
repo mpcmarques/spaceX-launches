@@ -1,6 +1,12 @@
 import React from "react";
 import mockFetch from "cross-fetch";
-import reducer, { initialState, fetchData } from "./launches";
+import reducer, {
+  initialState,
+  fetchData,
+  getUpcomingLanches,
+  getPastLaunches,
+  getLaunches,
+} from "./launches";
 import { Launch as LaunchType } from "../types";
 
 describe("Reducer:launches", () => {
@@ -108,5 +114,51 @@ describe("Reducer:launches", () => {
 
       expect(dispatch.mock.calls.flat()).toEqual(expected);
     });
+  });
+
+  it("test the selectors", () => {
+    const launchesState = {
+      loading: false,
+      launches: [
+        {
+          id: "asdf",
+          name: "1",
+          date_utc: "",
+          success: false,
+          upcoming: false,
+          rocket: { name: "name", flickr_images: ["img_url"] },
+        },
+        {
+          id: "asdf2",
+          name: "2",
+          date_utc: "",
+          success: false,
+          upcoming: true,
+          rocket: { name: "name", flickr_images: ["img_url"] },
+        },
+      ],
+    };
+
+    const upcomingLaunches = getUpcomingLanches({
+      launches: launchesState,
+      favorites: [],
+    });
+
+    expect(upcomingLaunches).toStrictEqual([launchesState.launches[1]]);
+
+    const pastLaunches = getPastLaunches({
+      launches: launchesState,
+      favorites: [],
+    });
+
+    expect(pastLaunches).toStrictEqual([launchesState.launches[0]]);
+
+    const launches = getLaunches({
+      // @ts-ignore
+      launches: launchesState,
+      favorites: [],
+    });
+
+    expect(launches.launches).toStrictEqual([...launchesState.launches]);
   });
 });

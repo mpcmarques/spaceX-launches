@@ -3,10 +3,8 @@ import { mount } from "enzyme";
 import toJson from "enzyme-to-json";
 import configureMockStore, { MockStoreEnhanced } from "redux-mock-store";
 import { Provider } from "react-redux";
-import { Launch as LaunchType } from "../types";
 import App from "./App";
 import thunk from "redux-thunk";
-import { fetchData } from "../reducer/launches";
 
 describe("<App />", () => {
   let store: MockStoreEnhanced<unknown, {}>;
