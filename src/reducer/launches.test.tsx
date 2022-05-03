@@ -154,11 +154,10 @@ describe("Reducer:launches", () => {
     expect(pastLaunches).toStrictEqual([launchesState.launches[0]]);
 
     const launches = getLaunches({
-      // @ts-ignore
       launches: launchesState,
       favorites: [],
     });
 
-    expect(launches.launches).toStrictEqual([...launchesState.launches]);
+    expect(launches).toStrictEqual(launchesState);
   });
 });
