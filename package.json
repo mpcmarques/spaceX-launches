@@ -1,6 +1,6 @@
 {
-  "name": "farfech",
-  "version": "0.1.0",
+  "name": "spacex-launches",
+  "version": "1.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
