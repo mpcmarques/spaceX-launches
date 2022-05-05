@@ -2,6 +2,9 @@
 
 Fetch and filter all SpaceX launches by upcoming, past, success, failure and date. It uses React, Redux (@redux/toolkit) and for tests it uses jest, enzyme and redux-mock-store.
 
+You can see it in:
+https://mpcmarques.github.io/spaceX-launches/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
