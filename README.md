@@ -1,6 +1,6 @@
 # SpaceX launches
 
-Fetch and filters all SpaceX launches. It uses React, Redux and for test it uses jest, enzyme and redux-mock-store.
+Fetch and filter all SpaceX launches by upcoming, past, success, failure and date. It uses React, Redux (@redux/toolkit) and for tests it uses jest, enzyme and redux-mock-store.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
