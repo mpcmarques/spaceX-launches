@@ -7,11 +7,13 @@ import reducer, {
   getPastLaunches,
   getLaunches,
 } from "./launches";
+import { initialState as launchDetailInitialState } from "./launchDetail";
 import { Launch as LaunchType } from "../types";
 
+jest.mock("cross-fetch");
+
 describe("Reducer:launches", () => {
-  // @ts-ignore
-  const mockedFetch: jest.Mock<unknown> = jest.spyOn(window, "fetch");
+  const mockedFetch = mockFetch as unknown as jest.Mock;
 
   it("should set initial state by default", () => {
     const action = { type: "unknown" };
@@ -97,7 +99,7 @@ describe("Reducer:launches", () => {
         Promise.resolve({
           status: 200,
           json() {
-            return Promise.resolve([launch]);
+            return Promise.resolve({ docs: [launch] });
           },
         })
       );
@@ -139,24 +141,21 @@ describe("Reducer:launches", () => {
       ],
     };
 
-    const upcomingLaunches = getUpcomingLanches({
+    const rootState = {
       launches: launchesState,
       favorites: [],
-    });
+      launchDetail: launchDetailInitialState,
+    };
+
+    const upcomingLaunches = getUpcomingLanches(rootState);
 
     expect(upcomingLaunches).toStrictEqual([launchesState.launches[1]]);
 
-    const pastLaunches = getPastLaunches({
-      launches: launchesState,
-      favorites: [],
-    });
+    const pastLaunches = getPastLaunches(rootState);
 
     expect(pastLaunches).toStrictEqual([launchesState.launches[0]]);
 
-    const launches = getLaunches({
-      launches: launchesState,
-      favorites: [],
-    });
+    const launches = getLaunches(rootState);
 
     expect(launches).toStrictEqual(launchesState);
   });

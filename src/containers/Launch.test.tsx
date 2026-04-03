@@ -4,134 +4,119 @@ import { mount } from "enzyme";
 import toJson from "enzyme-to-json";
 import configureMockStore, { MockStoreEnhanced } from "redux-mock-store";
 import { Provider } from "react-redux";
+import { MemoryRouter } from "react-router-dom";
 import { Launch as LaunchType } from "../types";
 import { toogleFavorite } from "../reducer/favorites";
 
+const mockNavigate = jest.fn();
+
+jest.mock("react-router-dom", () => ({
+	...jest.requireActual("react-router-dom"),
+	useNavigate: () => mockNavigate,
+}));
+
 describe("<Launch />", () => {
-  let store: MockStoreEnhanced<unknown, {}>;
+	let store: MockStoreEnhanced<unknown, {}>;
 
-  function setup(
-    launch: LaunchType,
-    favorites: Array<LaunchType> = []
-  ): JSX.Element {
-    store = configureMockStore()({ favorites: favorites });
-    return (
-      <Provider store={store}>
-        <Launch launch={launch} />
-      </Provider>
-    );
-  }
+	function buildLaunch(overrides: Partial<LaunchType> = {}): LaunchType {
+		return {
+			success: false,
+			name: "FalconSat",
+			date_utc: "2006-03-24T22:30:00.000Z",
+			upcoming: false,
+			id: "5eb87cd9ffd86e000604b32a",
+			rocket: {
+				name: "Starship",
+				flickr_images: ["img"],
+			},
+			...overrides,
+		};
+	}
 
-  afterEach(() => {
-    store.clearActions();
-  });
+	function setup(
+		launch: LaunchType,
+		favorites: Array<LaunchType> = [],
+	): JSX.Element {
+		store = configureMockStore()({ favorites: favorites });
+		return (
+			<Provider store={store}>
+				<MemoryRouter>
+					<Launch launch={launch} />
+				</MemoryRouter>
+			</Provider>
+		);
+	}
 
-  it("expected to match snapshot when launch failed", () => {
-    const launch = {
-      success: false,
-      name: "FalconSat",
-      date_utc: "2006-03-24T22:30:00.000Z",
-      upcoming: false,
-      id: "5eb87cd9ffd86e000604b32a",
-      rocket: {
-        name: "Starship",
-        flickr_images: ["img"],
-      },
-    };
+	afterEach(() => {
+		store.clearActions();
+		mockNavigate.mockClear();
+	});
 
-    const wrapper = mount(setup(launch));
+	it("expected to match snapshot when launch failed", () => {
+		const wrapper = mount(setup(buildLaunch({ success: false })));
 
-    expect(toJson(wrapper)).toMatchSnapshot();
-  });
+		expect(toJson(wrapper)).toMatchSnapshot();
+	});
 
-  it("expected to match snapshot when launch succeeded", () => {
-    const launch = {
-      success: true,
-      name: "FalconSat",
-      date_utc: "2006-03-24T22:30:00.000Z",
-      upcoming: false,
-      id: "5eb87cd9ffd86e000604b32a",
-      rocket: {
-        name: "Starship",
-        flickr_images: ["img"],
-      },
-    };
-    const wrapper = mount(setup(launch));
+	it("expected to match snapshot when launch succeeded", () => {
+		const wrapper = mount(setup(buildLaunch({ success: true })));
 
-    expect(toJson(wrapper)).toMatchSnapshot();
-  });
+		expect(toJson(wrapper)).toMatchSnapshot();
+	});
 
-  it("expected to match snapshot when launch success is null", () => {
-    const launch = {
-      success: undefined,
-      name: "FalconSat",
-      date_utc: "2006-03-24T22:30:00.000Z",
-      upcoming: false,
-      id: "5eb87cd9ffd86e000604b32a",
-      rocket: {
-        name: "Starship",
-        flickr_images: ["img"],
-      },
-    };
-    const wrapper = mount(setup(launch));
+	it("expected to match snapshot when launch success is null", () => {
+		const wrapper = mount(setup(buildLaunch({ success: undefined })));
 
-    expect(toJson(wrapper)).toMatchSnapshot();
-  });
+		expect(toJson(wrapper)).toMatchSnapshot();
+	});
 
-  it("expected to match snapshot when launch success is null", () => {
-    const launch = {
-      success: undefined,
-      name: "FalconSat",
-      date_utc: "2006-03-24T22:30:00.000Z",
-      upcoming: false,
-      id: "5eb87cd9ffd86e000604b32a",
-      rocket: {
-        name: "Starship",
-        flickr_images: ["img"],
-      },
-    };
-    const wrapper = mount(setup(launch));
+	describe("expected to match snapshot when favorite is toggled", () => {
+		const launch = buildLaunch({ success: undefined });
 
-    expect(toJson(wrapper)).toMatchSnapshot();
-  });
+		it("favorite is clicked", () => {
+			const wrapper = mount(setup(launch, [launch]));
 
-  describe("expected to match snapshot when favorite is toggled", () => {
-    const launch = {
-      success: undefined,
-      name: "FalconSat",
-      date_utc: "2006-03-24T22:30:00.000Z",
-      upcoming: false,
-      id: "5eb87cd9ffd86e000604b32a",
-      rocket: {
-        name: "Starship",
-        flickr_images: ["img"],
-      },
-    };
+			wrapper.find(".favorite-button").simulate("click");
 
-    it("favorite is clicked", () => {
-      const wrapper = mount(setup(launch, [launch]));
+			expect(
+				wrapper.find(".favorite-button").hasClass("favorite"),
+			).toEqual(true);
 
-      wrapper.find(".favorite-button").simulate("click");
+			expect(toJson(wrapper)).toMatchSnapshot();
+		});
 
-      expect(wrapper.find(".favorite-button").hasClass("favorite")).toEqual(
-        true
-      );
+		it("favorite is clicked again", () => {
+			const wrapper = mount(setup(launch));
 
-      expect(toJson(wrapper)).toMatchSnapshot();
-    });
+			wrapper
+				.find(".favorite-button")
+				.simulate("click", () =>
+					store.dispatch(toogleFavorite(launch)),
+				);
 
-    it("favorite is clicked again", () => {
-      const wrapper = mount(setup(launch));
+			expect(
+				wrapper.find(".favorite-button").hasClass("favorite"),
+			).toEqual(false);
 
-      wrapper
-        .find(".favorite-button")
-        .simulate("click", () => store.dispatch(toogleFavorite(launch)));
+			expect(toJson(wrapper)).toMatchSnapshot();
+		});
+	});
 
-      expect(wrapper.find(".favorite-button").hasClass("favorite")).toEqual(
-        false
-      );
+	it("navigates to detail page when the card is clicked", () => {
+		const wrapper = mount(setup(buildLaunch()));
 
-      expect(toJson(wrapper)).toMatchSnapshot();
-    });
-  });
+		wrapper.find("div").first().simulate("click");
+
+		expect(mockNavigate).toHaveBeenCalledWith(
+			"/launch/5eb87cd9ffd86e000604b32a",
+		);
+	});
+
+	it("does not navigate when favorite button is clicked", () => {
+		const wrapper = mount(setup(buildLaunch()));
+
+		wrapper.find(".favorite-button").simulate("click");
+
+		expect(mockNavigate).not.toHaveBeenCalled();
+	});
 });

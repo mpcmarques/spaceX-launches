@@ -1,0 +1,2179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LaunchDetail /> renders full launch details 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <MemoryRouter
+    initialEntries={
+      Array [
+        "/launch/abc",
+      ]
+    }
+  >
+    <Router
+      location={
+        Object {
+          "hash": "",
+          "key": "default",
+          "pathname": "/launch/abc",
+          "search": "",
+          "state": null,
+        }
+      }
+      navigationType="POP"
+      navigator={
+        Object {
+          "action": "POP",
+          "createHref": [Function],
+          "createURL": [Function],
+          "encodeLocation": [Function],
+          "go": [Function],
+          "index": 0,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "key": "default",
+            "pathname": "/launch/abc",
+            "search": "",
+            "state": null,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <Routes>
+        <RenderedRoute
+          match={
+            Object {
+              "params": Object {
+                "id": "abc",
+              },
+              "pathname": "/launch/abc",
+              "pathnameBase": "/launch/abc",
+              "route": Object {
+                "Component": undefined,
+                "ErrorBoundary": undefined,
+                "action": undefined,
+                "caseSensitive": undefined,
+                "element": <LaunchDetail />,
+                "errorElement": undefined,
+                "handle": undefined,
+                "hasErrorBoundary": false,
+                "id": "0",
+                "index": undefined,
+                "lazy": undefined,
+                "loader": undefined,
+                "path": "/launch/:id",
+                "shouldRevalidate": undefined,
+              },
+            }
+          }
+          routeContext={
+            Object {
+              "isDataRoute": false,
+              "matches": Array [
+                Object {
+                  "params": Object {
+                    "id": "abc",
+                  },
+                  "pathname": "/launch/abc",
+                  "pathnameBase": "/launch/abc",
+                  "route": Object {
+                    "Component": undefined,
+                    "ErrorBoundary": undefined,
+                    "action": undefined,
+                    "caseSensitive": undefined,
+                    "element": <LaunchDetail />,
+                    "errorElement": undefined,
+                    "handle": undefined,
+                    "hasErrorBoundary": false,
+                    "id": "0",
+                    "index": undefined,
+                    "lazy": undefined,
+                    "loader": undefined,
+                    "path": "/launch/:id",
+                    "shouldRevalidate": undefined,
+                  },
+                },
+              ],
+              "outlet": null,
+            }
+          }
+        >
+          <LaunchDetail>
+            <Styled(div)>
+              <Insertion
+                cache={
+                  Object {
+                    "insert": [Function],
+                    "inserted": Object {
+                      "18wq33b": true,
+                    },
+                    "key": "css",
+                    "nonce": undefined,
+                    "registered": Object {},
+                    "sheet": StyleSheet {
+                      "_alreadyInsertedOrderInsensitiveRule": true,
+                      "_insertTag": [Function],
+                      "before": null,
+                      "container": <head>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b{background-color:#373e98;color:white;padding:12px;width:80%;margin-left:10%;min-height:100vh;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .back-link{color:#fee36e;-webkit-text-decoration:none;text-decoration:none;font-weight:bold;display:inline-block;margin-bottom:20px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .back-link:hover{-webkit-text-decoration:underline;text-decoration:underline;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:20px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header img{height:120px;width:120px;object-fit:contain;margin-right:20px;border-radius:10px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header h1{margin:0 0 8px 0;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .favorite-button{border:2px solid #fee36e;cursor:pointer;background-color:transparent;padding:8px 16px;border-radius:10px;color:#fee36e;font-weight:bold;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .favorite-button.favorite{background-color:#fee36e;color:#373e98;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section{background-color:#ceb92c;color:#2a2a2a;padding:16px;border-radius:10px;margin-bottom:16px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section h2{margin-top:0;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section .field{margin-bottom:8px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section a{color:#373e98;font-weight:bold;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section ul{padding-left:20px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .rocket-images{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;gap:10px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .rocket-images img{height:150px;object-fit:cover;border-radius:10px;}
+                        </style>
+                      </head>,
+                      "ctr": 15,
+                      "insertionPoint": undefined,
+                      "isSpeedy": false,
+                      "key": "css",
+                      "nonce": undefined,
+                      "prepend": undefined,
+                      "tags": Array [
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b{background-color:#373e98;color:white;padding:12px;width:80%;margin-left:10%;min-height:100vh;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .back-link{color:#fee36e;-webkit-text-decoration:none;text-decoration:none;font-weight:bold;display:inline-block;margin-bottom:20px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .back-link:hover{-webkit-text-decoration:underline;text-decoration:underline;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:20px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header img{height:120px;width:120px;object-fit:contain;margin-right:20px;border-radius:10px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header h1{margin:0 0 8px 0;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .favorite-button{border:2px solid #fee36e;cursor:pointer;background-color:transparent;padding:8px 16px;border-radius:10px;color:#fee36e;font-weight:bold;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .favorite-button.favorite{background-color:#fee36e;color:#373e98;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section{background-color:#ceb92c;color:#2a2a2a;padding:16px;border-radius:10px;margin-bottom:16px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section h2{margin-top:0;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section .field{margin-bottom:8px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section a{color:#373e98;font-weight:bold;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section ul{padding-left:20px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .rocket-images{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;gap:10px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .rocket-images img{height:150px;object-fit:cover;border-radius:10px;}
+                        </style>,
+                      ],
+                    },
+                  }
+                }
+                isStringTag={true}
+                serialized={
+                  Object {
+                    "map": undefined,
+                    "name": "18wq33b",
+                    "next": undefined,
+                    "styles": "
+	background-color: #373e98;
+	color: white;
+	padding: 12px;
+	width: 80%;
+	margin-left: 10%;
+	min-height: 100vh;
+
+	.back-link {
+		color: #fee36e;
+		text-decoration: none;
+		font-weight: bold;
+		display: inline-block;
+		margin-bottom: 20px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	header {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+
+		img {
+			height: 120px;
+			width: 120px;
+			object-fit: contain;
+			margin-right: 20px;
+			border-radius: 10px;
+		}
+
+		h1 {
+			margin: 0 0 8px 0;
+		}
+	}
+
+	.favorite-button {
+		border: 2px solid #fee36e;
+		cursor: pointer;
+		background-color: transparent;
+		padding: 8px 16px;
+		border-radius: 10px;
+		color: #fee36e;
+		font-weight: bold;
+
+		&.favorite {
+			background-color: #fee36e;
+			color: #373e98;
+		}
+	}
+
+	.detail-section {
+		background-color: #ceb92c;
+		color: #2a2a2a;
+		padding: 16px;
+		border-radius: 10px;
+		margin-bottom: 16px;
+
+		h2 {
+			margin-top: 0;
+		}
+
+		.field {
+			margin-bottom: 8px;
+		}
+
+		a {
+			color: #373e98;
+			font-weight: bold;
+		}
+
+		ul {
+			padding-left: 20px;
+		}
+	}
+
+	.rocket-images {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+
+		img {
+			height: 150px;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+	}
+",
+                    "toString": [Function],
+                  }
+                }
+              />
+              <div
+                className="css-18wq33b"
+              >
+                <Link
+                  className="back-link"
+                  to="/"
+                >
+                  <a
+                    className="back-link"
+                    href="/"
+                    onClick={[Function]}
+                  >
+                    ← Back to launches
+                  </a>
+                </Link>
+                <header>
+                  <img
+                    alt="mission-patch"
+                    src="patch_large"
+                  />
+                  <div>
+                    <h1>
+                      FalconSat
+                    </h1>
+                    <button
+                      className="favorite-button "
+                      name="favorite-button"
+                      onClick={[Function]}
+                    >
+                      Favorite
+                    </button>
+                  </div>
+                </header>
+                <section
+                  className="detail-section"
+                >
+                  <h2>
+                    Mission
+                  </h2>
+                  <div
+                    className="field"
+                  >
+                    <b>
+                      Flight number:
+                    </b>
+                     
+                    1
+                  </div>
+                  <div
+                    className="field"
+                  >
+                    <b>
+                      Date (UTC):
+                    </b>
+                     
+                    Fri, 24 Mar 2006 22:30:00 GMT
+                  </div>
+                  <div
+                    className="field"
+                  >
+                    <b>
+                      Success:
+                    </b>
+                     
+                    False
+                  </div>
+                  <div
+                    className="field"
+                  >
+                    <b>
+                      Upcoming:
+                    </b>
+                     
+                    False
+                  </div>
+                  <div
+                    className="field"
+                  >
+                    <b>
+                      Details:
+                    </b>
+                     
+                    Engine failure at 33 seconds and loss of vehicle
+                  </div>
+                </section>
+                <section
+                  className="detail-section"
+                >
+                  <h2>
+                    Failures
+                  </h2>
+                  <ul>
+                    <li
+                      key="0"
+                    >
+                      <b>
+                        Reason:
+                      </b>
+                       
+                      merlin engine failure
+                       (at T+33s)
+                    </li>
+                  </ul>
+                </section>
+                <section
+                  className="detail-section"
+                >
+                  <h2>
+                    Rocket
+                  </h2>
+                  <div
+                    className="field"
+                  >
+                    <b>
+                      Name:
+                    </b>
+                     
+                    Falcon 1
+                  </div>
+                  <div
+                    className="rocket-images"
+                  >
+                    <img
+                      alt="rocket-0"
+                      key="0"
+                      src="img1"
+                    />
+                    <img
+                      alt="rocket-1"
+                      key="1"
+                      src="img2"
+                    />
+                  </div>
+                </section>
+                <section
+                  className="detail-section"
+                >
+                  <h2>
+                    Launchpad
+                  </h2>
+                  <div
+                    className="field"
+                  >
+                    <b>
+                      Name:
+                    </b>
+                     
+                    Kwajalein Atoll Omelek Island
+                  </div>
+                  <div
+                    className="field"
+                  >
+                    <b>
+                      Location:
+                    </b>
+                     
+                    Omelek Island
+                    ,
+                     
+                    Marshall Islands
+                  </div>
+                </section>
+                <section
+                  className="detail-section"
+                >
+                  <h2>
+                    Payloads
+                  </h2>
+                  <ul>
+                    <li
+                      key="p1"
+                    >
+                      <b>
+                        FalconSAT-2
+                      </b>
+                       (
+                      Satellite
+                      )
+                       — 20kg
+                       — orbit: LEO
+                    </li>
+                  </ul>
+                </section>
+                <section
+                  className="detail-section"
+                >
+                  <h2>
+                    Links
+                  </h2>
+                  <div
+                    className="field"
+                  >
+                    <a
+                      href="https://youtube.com/watch"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Webcast
+                    </a>
+                  </div>
+                  <div
+                    className="field"
+                  >
+                    <a
+                      href="https://article.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Article
+                    </a>
+                  </div>
+                  <div
+                    className="field"
+                  >
+                    <a
+                      href="https://wikipedia.org"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Wikipedia
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </Styled(div)>
+          </LaunchDetail>
+        </RenderedRoute>
+      </Routes>
+    </Router>
+  </MemoryRouter>
+</Provider>
+`;
+
+exports[`<LaunchDetail /> renders minimal launch without optional sections 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <MemoryRouter
+    initialEntries={
+      Array [
+        "/launch/abc",
+      ]
+    }
+  >
+    <Router
+      location={
+        Object {
+          "hash": "",
+          "key": "default",
+          "pathname": "/launch/abc",
+          "search": "",
+          "state": null,
+        }
+      }
+      navigationType="POP"
+      navigator={
+        Object {
+          "action": "POP",
+          "createHref": [Function],
+          "createURL": [Function],
+          "encodeLocation": [Function],
+          "go": [Function],
+          "index": 0,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "key": "default",
+            "pathname": "/launch/abc",
+            "search": "",
+            "state": null,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <Routes>
+        <RenderedRoute
+          match={
+            Object {
+              "params": Object {
+                "id": "abc",
+              },
+              "pathname": "/launch/abc",
+              "pathnameBase": "/launch/abc",
+              "route": Object {
+                "Component": undefined,
+                "ErrorBoundary": undefined,
+                "action": undefined,
+                "caseSensitive": undefined,
+                "element": <LaunchDetail />,
+                "errorElement": undefined,
+                "handle": undefined,
+                "hasErrorBoundary": false,
+                "id": "0",
+                "index": undefined,
+                "lazy": undefined,
+                "loader": undefined,
+                "path": "/launch/:id",
+                "shouldRevalidate": undefined,
+              },
+            }
+          }
+          routeContext={
+            Object {
+              "isDataRoute": false,
+              "matches": Array [
+                Object {
+                  "params": Object {
+                    "id": "abc",
+                  },
+                  "pathname": "/launch/abc",
+                  "pathnameBase": "/launch/abc",
+                  "route": Object {
+                    "Component": undefined,
+                    "ErrorBoundary": undefined,
+                    "action": undefined,
+                    "caseSensitive": undefined,
+                    "element": <LaunchDetail />,
+                    "errorElement": undefined,
+                    "handle": undefined,
+                    "hasErrorBoundary": false,
+                    "id": "0",
+                    "index": undefined,
+                    "lazy": undefined,
+                    "loader": undefined,
+                    "path": "/launch/:id",
+                    "shouldRevalidate": undefined,
+                  },
+                },
+              ],
+              "outlet": null,
+            }
+          }
+        >
+          <LaunchDetail>
+            <Styled(div)>
+              <Insertion
+                cache={
+                  Object {
+                    "insert": [Function],
+                    "inserted": Object {
+                      "18wq33b": true,
+                    },
+                    "key": "css",
+                    "nonce": undefined,
+                    "registered": Object {},
+                    "sheet": StyleSheet {
+                      "_alreadyInsertedOrderInsensitiveRule": true,
+                      "_insertTag": [Function],
+                      "before": null,
+                      "container": <head>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b{background-color:#373e98;color:white;padding:12px;width:80%;margin-left:10%;min-height:100vh;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .back-link{color:#fee36e;-webkit-text-decoration:none;text-decoration:none;font-weight:bold;display:inline-block;margin-bottom:20px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .back-link:hover{-webkit-text-decoration:underline;text-decoration:underline;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:20px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header img{height:120px;width:120px;object-fit:contain;margin-right:20px;border-radius:10px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header h1{margin:0 0 8px 0;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .favorite-button{border:2px solid #fee36e;cursor:pointer;background-color:transparent;padding:8px 16px;border-radius:10px;color:#fee36e;font-weight:bold;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .favorite-button.favorite{background-color:#fee36e;color:#373e98;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section{background-color:#ceb92c;color:#2a2a2a;padding:16px;border-radius:10px;margin-bottom:16px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section h2{margin-top:0;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section .field{margin-bottom:8px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section a{color:#373e98;font-weight:bold;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section ul{padding-left:20px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .rocket-images{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;gap:10px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .rocket-images img{height:150px;object-fit:cover;border-radius:10px;}
+                        </style>
+                      </head>,
+                      "ctr": 15,
+                      "insertionPoint": undefined,
+                      "isSpeedy": false,
+                      "key": "css",
+                      "nonce": undefined,
+                      "prepend": undefined,
+                      "tags": Array [
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b{background-color:#373e98;color:white;padding:12px;width:80%;margin-left:10%;min-height:100vh;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .back-link{color:#fee36e;-webkit-text-decoration:none;text-decoration:none;font-weight:bold;display:inline-block;margin-bottom:20px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .back-link:hover{-webkit-text-decoration:underline;text-decoration:underline;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:20px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header img{height:120px;width:120px;object-fit:contain;margin-right:20px;border-radius:10px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header h1{margin:0 0 8px 0;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .favorite-button{border:2px solid #fee36e;cursor:pointer;background-color:transparent;padding:8px 16px;border-radius:10px;color:#fee36e;font-weight:bold;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .favorite-button.favorite{background-color:#fee36e;color:#373e98;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section{background-color:#ceb92c;color:#2a2a2a;padding:16px;border-radius:10px;margin-bottom:16px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section h2{margin-top:0;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section .field{margin-bottom:8px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section a{color:#373e98;font-weight:bold;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section ul{padding-left:20px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .rocket-images{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;gap:10px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .rocket-images img{height:150px;object-fit:cover;border-radius:10px;}
+                        </style>,
+                      ],
+                    },
+                  }
+                }
+                isStringTag={true}
+                serialized={
+                  Object {
+                    "map": undefined,
+                    "name": "18wq33b",
+                    "next": undefined,
+                    "styles": "
+	background-color: #373e98;
+	color: white;
+	padding: 12px;
+	width: 80%;
+	margin-left: 10%;
+	min-height: 100vh;
+
+	.back-link {
+		color: #fee36e;
+		text-decoration: none;
+		font-weight: bold;
+		display: inline-block;
+		margin-bottom: 20px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	header {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+
+		img {
+			height: 120px;
+			width: 120px;
+			object-fit: contain;
+			margin-right: 20px;
+			border-radius: 10px;
+		}
+
+		h1 {
+			margin: 0 0 8px 0;
+		}
+	}
+
+	.favorite-button {
+		border: 2px solid #fee36e;
+		cursor: pointer;
+		background-color: transparent;
+		padding: 8px 16px;
+		border-radius: 10px;
+		color: #fee36e;
+		font-weight: bold;
+
+		&.favorite {
+			background-color: #fee36e;
+			color: #373e98;
+		}
+	}
+
+	.detail-section {
+		background-color: #ceb92c;
+		color: #2a2a2a;
+		padding: 16px;
+		border-radius: 10px;
+		margin-bottom: 16px;
+
+		h2 {
+			margin-top: 0;
+		}
+
+		.field {
+			margin-bottom: 8px;
+		}
+
+		a {
+			color: #373e98;
+			font-weight: bold;
+		}
+
+		ul {
+			padding-left: 20px;
+		}
+	}
+
+	.rocket-images {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+
+		img {
+			height: 150px;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+	}
+",
+                    "toString": [Function],
+                  }
+                }
+              />
+              <div
+                className="css-18wq33b"
+              >
+                <Link
+                  className="back-link"
+                  to="/"
+                >
+                  <a
+                    className="back-link"
+                    href="/"
+                    onClick={[Function]}
+                  >
+                    ← Back to launches
+                  </a>
+                </Link>
+                <header>
+                  <div>
+                    <h1>
+                      Starlink
+                    </h1>
+                    <button
+                      className="favorite-button "
+                      name="favorite-button"
+                      onClick={[Function]}
+                    >
+                      Favorite
+                    </button>
+                  </div>
+                </header>
+                <section
+                  className="detail-section"
+                >
+                  <h2>
+                    Mission
+                  </h2>
+                  <div
+                    className="field"
+                  >
+                    <b>
+                      Date (UTC):
+                    </b>
+                     
+                    Wed, 01 Jan 2020 00:00:00 GMT
+                  </div>
+                  <div
+                    className="field"
+                  >
+                    <b>
+                      Success:
+                    </b>
+                     
+                    True
+                  </div>
+                  <div
+                    className="field"
+                  >
+                    <b>
+                      Upcoming:
+                    </b>
+                     
+                    False
+                  </div>
+                </section>
+                <section
+                  className="detail-section"
+                >
+                  <h2>
+                    Rocket
+                  </h2>
+                  <div
+                    className="field"
+                  >
+                    <b>
+                      Name:
+                    </b>
+                     
+                    Falcon 9
+                  </div>
+                </section>
+              </div>
+            </Styled(div)>
+          </LaunchDetail>
+        </RenderedRoute>
+      </Routes>
+    </Router>
+  </MemoryRouter>
+</Provider>
+`;
+
+exports[`<LaunchDetail /> shows loading state 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <MemoryRouter
+    initialEntries={
+      Array [
+        "/launch/abc",
+      ]
+    }
+  >
+    <Router
+      location={
+        Object {
+          "hash": "",
+          "key": "default",
+          "pathname": "/launch/abc",
+          "search": "",
+          "state": null,
+        }
+      }
+      navigationType="POP"
+      navigator={
+        Object {
+          "action": "POP",
+          "createHref": [Function],
+          "createURL": [Function],
+          "encodeLocation": [Function],
+          "go": [Function],
+          "index": 0,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "key": "default",
+            "pathname": "/launch/abc",
+            "search": "",
+            "state": null,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <Routes>
+        <RenderedRoute
+          match={
+            Object {
+              "params": Object {
+                "id": "abc",
+              },
+              "pathname": "/launch/abc",
+              "pathnameBase": "/launch/abc",
+              "route": Object {
+                "Component": undefined,
+                "ErrorBoundary": undefined,
+                "action": undefined,
+                "caseSensitive": undefined,
+                "element": <LaunchDetail />,
+                "errorElement": undefined,
+                "handle": undefined,
+                "hasErrorBoundary": false,
+                "id": "0",
+                "index": undefined,
+                "lazy": undefined,
+                "loader": undefined,
+                "path": "/launch/:id",
+                "shouldRevalidate": undefined,
+              },
+            }
+          }
+          routeContext={
+            Object {
+              "isDataRoute": false,
+              "matches": Array [
+                Object {
+                  "params": Object {
+                    "id": "abc",
+                  },
+                  "pathname": "/launch/abc",
+                  "pathnameBase": "/launch/abc",
+                  "route": Object {
+                    "Component": undefined,
+                    "ErrorBoundary": undefined,
+                    "action": undefined,
+                    "caseSensitive": undefined,
+                    "element": <LaunchDetail />,
+                    "errorElement": undefined,
+                    "handle": undefined,
+                    "hasErrorBoundary": false,
+                    "id": "0",
+                    "index": undefined,
+                    "lazy": undefined,
+                    "loader": undefined,
+                    "path": "/launch/:id",
+                    "shouldRevalidate": undefined,
+                  },
+                },
+              ],
+              "outlet": null,
+            }
+          }
+        >
+          <LaunchDetail>
+            <Styled(div)>
+              <Insertion
+                cache={
+                  Object {
+                    "insert": [Function],
+                    "inserted": Object {
+                      "18wq33b": true,
+                    },
+                    "key": "css",
+                    "nonce": undefined,
+                    "registered": Object {},
+                    "sheet": StyleSheet {
+                      "_alreadyInsertedOrderInsensitiveRule": true,
+                      "_insertTag": [Function],
+                      "before": null,
+                      "container": <head>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b{background-color:#373e98;color:white;padding:12px;width:80%;margin-left:10%;min-height:100vh;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .back-link{color:#fee36e;-webkit-text-decoration:none;text-decoration:none;font-weight:bold;display:inline-block;margin-bottom:20px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .back-link:hover{-webkit-text-decoration:underline;text-decoration:underline;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:20px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header img{height:120px;width:120px;object-fit:contain;margin-right:20px;border-radius:10px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header h1{margin:0 0 8px 0;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .favorite-button{border:2px solid #fee36e;cursor:pointer;background-color:transparent;padding:8px 16px;border-radius:10px;color:#fee36e;font-weight:bold;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .favorite-button.favorite{background-color:#fee36e;color:#373e98;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section{background-color:#ceb92c;color:#2a2a2a;padding:16px;border-radius:10px;margin-bottom:16px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section h2{margin-top:0;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section .field{margin-bottom:8px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section a{color:#373e98;font-weight:bold;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section ul{padding-left:20px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .rocket-images{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;gap:10px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .rocket-images img{height:150px;object-fit:cover;border-radius:10px;}
+                        </style>
+                      </head>,
+                      "ctr": 15,
+                      "insertionPoint": undefined,
+                      "isSpeedy": false,
+                      "key": "css",
+                      "nonce": undefined,
+                      "prepend": undefined,
+                      "tags": Array [
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b{background-color:#373e98;color:white;padding:12px;width:80%;margin-left:10%;min-height:100vh;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .back-link{color:#fee36e;-webkit-text-decoration:none;text-decoration:none;font-weight:bold;display:inline-block;margin-bottom:20px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .back-link:hover{-webkit-text-decoration:underline;text-decoration:underline;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:20px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header img{height:120px;width:120px;object-fit:contain;margin-right:20px;border-radius:10px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header h1{margin:0 0 8px 0;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .favorite-button{border:2px solid #fee36e;cursor:pointer;background-color:transparent;padding:8px 16px;border-radius:10px;color:#fee36e;font-weight:bold;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .favorite-button.favorite{background-color:#fee36e;color:#373e98;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section{background-color:#ceb92c;color:#2a2a2a;padding:16px;border-radius:10px;margin-bottom:16px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section h2{margin-top:0;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section .field{margin-bottom:8px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section a{color:#373e98;font-weight:bold;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section ul{padding-left:20px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .rocket-images{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;gap:10px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .rocket-images img{height:150px;object-fit:cover;border-radius:10px;}
+                        </style>,
+                      ],
+                    },
+                  }
+                }
+                isStringTag={true}
+                serialized={
+                  Object {
+                    "map": undefined,
+                    "name": "18wq33b",
+                    "next": undefined,
+                    "styles": "
+	background-color: #373e98;
+	color: white;
+	padding: 12px;
+	width: 80%;
+	margin-left: 10%;
+	min-height: 100vh;
+
+	.back-link {
+		color: #fee36e;
+		text-decoration: none;
+		font-weight: bold;
+		display: inline-block;
+		margin-bottom: 20px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	header {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+
+		img {
+			height: 120px;
+			width: 120px;
+			object-fit: contain;
+			margin-right: 20px;
+			border-radius: 10px;
+		}
+
+		h1 {
+			margin: 0 0 8px 0;
+		}
+	}
+
+	.favorite-button {
+		border: 2px solid #fee36e;
+		cursor: pointer;
+		background-color: transparent;
+		padding: 8px 16px;
+		border-radius: 10px;
+		color: #fee36e;
+		font-weight: bold;
+
+		&.favorite {
+			background-color: #fee36e;
+			color: #373e98;
+		}
+	}
+
+	.detail-section {
+		background-color: #ceb92c;
+		color: #2a2a2a;
+		padding: 16px;
+		border-radius: 10px;
+		margin-bottom: 16px;
+
+		h2 {
+			margin-top: 0;
+		}
+
+		.field {
+			margin-bottom: 8px;
+		}
+
+		a {
+			color: #373e98;
+			font-weight: bold;
+		}
+
+		ul {
+			padding-left: 20px;
+		}
+	}
+
+	.rocket-images {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+
+		img {
+			height: 150px;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+	}
+",
+                    "toString": [Function],
+                  }
+                }
+              />
+              <div
+                className="css-18wq33b"
+              >
+                <Link
+                  className="back-link"
+                  to="/"
+                >
+                  <a
+                    className="back-link"
+                    href="/"
+                    onClick={[Function]}
+                  >
+                    ← Back to launches
+                  </a>
+                </Link>
+                <h2>
+                  Loading...
+                </h2>
+              </div>
+            </Styled(div)>
+          </LaunchDetail>
+        </RenderedRoute>
+      </Routes>
+    </Router>
+  </MemoryRouter>
+</Provider>
+`;
+
+exports[`<LaunchDetail /> shows not found state when launch is null 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <MemoryRouter
+    initialEntries={
+      Array [
+        "/launch/abc",
+      ]
+    }
+  >
+    <Router
+      location={
+        Object {
+          "hash": "",
+          "key": "default",
+          "pathname": "/launch/abc",
+          "search": "",
+          "state": null,
+        }
+      }
+      navigationType="POP"
+      navigator={
+        Object {
+          "action": "POP",
+          "createHref": [Function],
+          "createURL": [Function],
+          "encodeLocation": [Function],
+          "go": [Function],
+          "index": 0,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "key": "default",
+            "pathname": "/launch/abc",
+            "search": "",
+            "state": null,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <Routes>
+        <RenderedRoute
+          match={
+            Object {
+              "params": Object {
+                "id": "abc",
+              },
+              "pathname": "/launch/abc",
+              "pathnameBase": "/launch/abc",
+              "route": Object {
+                "Component": undefined,
+                "ErrorBoundary": undefined,
+                "action": undefined,
+                "caseSensitive": undefined,
+                "element": <LaunchDetail />,
+                "errorElement": undefined,
+                "handle": undefined,
+                "hasErrorBoundary": false,
+                "id": "0",
+                "index": undefined,
+                "lazy": undefined,
+                "loader": undefined,
+                "path": "/launch/:id",
+                "shouldRevalidate": undefined,
+              },
+            }
+          }
+          routeContext={
+            Object {
+              "isDataRoute": false,
+              "matches": Array [
+                Object {
+                  "params": Object {
+                    "id": "abc",
+                  },
+                  "pathname": "/launch/abc",
+                  "pathnameBase": "/launch/abc",
+                  "route": Object {
+                    "Component": undefined,
+                    "ErrorBoundary": undefined,
+                    "action": undefined,
+                    "caseSensitive": undefined,
+                    "element": <LaunchDetail />,
+                    "errorElement": undefined,
+                    "handle": undefined,
+                    "hasErrorBoundary": false,
+                    "id": "0",
+                    "index": undefined,
+                    "lazy": undefined,
+                    "loader": undefined,
+                    "path": "/launch/:id",
+                    "shouldRevalidate": undefined,
+                  },
+                },
+              ],
+              "outlet": null,
+            }
+          }
+        >
+          <LaunchDetail>
+            <Styled(div)>
+              <Insertion
+                cache={
+                  Object {
+                    "insert": [Function],
+                    "inserted": Object {
+                      "18wq33b": true,
+                    },
+                    "key": "css",
+                    "nonce": undefined,
+                    "registered": Object {},
+                    "sheet": StyleSheet {
+                      "_alreadyInsertedOrderInsensitiveRule": true,
+                      "_insertTag": [Function],
+                      "before": null,
+                      "container": <head>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b{background-color:#373e98;color:white;padding:12px;width:80%;margin-left:10%;min-height:100vh;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .back-link{color:#fee36e;-webkit-text-decoration:none;text-decoration:none;font-weight:bold;display:inline-block;margin-bottom:20px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .back-link:hover{-webkit-text-decoration:underline;text-decoration:underline;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:20px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header img{height:120px;width:120px;object-fit:contain;margin-right:20px;border-radius:10px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header h1{margin:0 0 8px 0;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .favorite-button{border:2px solid #fee36e;cursor:pointer;background-color:transparent;padding:8px 16px;border-radius:10px;color:#fee36e;font-weight:bold;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .favorite-button.favorite{background-color:#fee36e;color:#373e98;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section{background-color:#ceb92c;color:#2a2a2a;padding:16px;border-radius:10px;margin-bottom:16px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section h2{margin-top:0;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section .field{margin-bottom:8px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section a{color:#373e98;font-weight:bold;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section ul{padding-left:20px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .rocket-images{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;gap:10px;}
+                        </style>
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .rocket-images img{height:150px;object-fit:cover;border-radius:10px;}
+                        </style>
+                      </head>,
+                      "ctr": 15,
+                      "insertionPoint": undefined,
+                      "isSpeedy": false,
+                      "key": "css",
+                      "nonce": undefined,
+                      "prepend": undefined,
+                      "tags": Array [
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b{background-color:#373e98;color:white;padding:12px;width:80%;margin-left:10%;min-height:100vh;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .back-link{color:#fee36e;-webkit-text-decoration:none;text-decoration:none;font-weight:bold;display:inline-block;margin-bottom:20px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .back-link:hover{-webkit-text-decoration:underline;text-decoration:underline;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:20px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header img{height:120px;width:120px;object-fit:contain;margin-right:20px;border-radius:10px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b header h1{margin:0 0 8px 0;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .favorite-button{border:2px solid #fee36e;cursor:pointer;background-color:transparent;padding:8px 16px;border-radius:10px;color:#fee36e;font-weight:bold;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .favorite-button.favorite{background-color:#fee36e;color:#373e98;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section{background-color:#ceb92c;color:#2a2a2a;padding:16px;border-radius:10px;margin-bottom:16px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section h2{margin-top:0;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section .field{margin-bottom:8px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section a{color:#373e98;font-weight:bold;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .detail-section ul{padding-left:20px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .rocket-images{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;gap:10px;}
+                        </style>,
+                        <style
+                          data-emotion="css"
+                          data-s=""
+                        >
+                          
+                          .css-18wq33b .rocket-images img{height:150px;object-fit:cover;border-radius:10px;}
+                        </style>,
+                      ],
+                    },
+                  }
+                }
+                isStringTag={true}
+                serialized={
+                  Object {
+                    "map": undefined,
+                    "name": "18wq33b",
+                    "next": undefined,
+                    "styles": "
+	background-color: #373e98;
+	color: white;
+	padding: 12px;
+	width: 80%;
+	margin-left: 10%;
+	min-height: 100vh;
+
+	.back-link {
+		color: #fee36e;
+		text-decoration: none;
+		font-weight: bold;
+		display: inline-block;
+		margin-bottom: 20px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	header {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+
+		img {
+			height: 120px;
+			width: 120px;
+			object-fit: contain;
+			margin-right: 20px;
+			border-radius: 10px;
+		}
+
+		h1 {
+			margin: 0 0 8px 0;
+		}
+	}
+
+	.favorite-button {
+		border: 2px solid #fee36e;
+		cursor: pointer;
+		background-color: transparent;
+		padding: 8px 16px;
+		border-radius: 10px;
+		color: #fee36e;
+		font-weight: bold;
+
+		&.favorite {
+			background-color: #fee36e;
+			color: #373e98;
+		}
+	}
+
+	.detail-section {
+		background-color: #ceb92c;
+		color: #2a2a2a;
+		padding: 16px;
+		border-radius: 10px;
+		margin-bottom: 16px;
+
+		h2 {
+			margin-top: 0;
+		}
+
+		.field {
+			margin-bottom: 8px;
+		}
+
+		a {
+			color: #373e98;
+			font-weight: bold;
+		}
+
+		ul {
+			padding-left: 20px;
+		}
+	}
+
+	.rocket-images {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+
+		img {
+			height: 150px;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+	}
+",
+                    "toString": [Function],
+                  }
+                }
+              />
+              <div
+                className="css-18wq33b"
+              >
+                <Link
+                  className="back-link"
+                  to="/"
+                >
+                  <a
+                    className="back-link"
+                    href="/"
+                    onClick={[Function]}
+                  >
+                    ← Back to launches
+                  </a>
+                </Link>
+                <h2>
+                  Launch not found
+                </h2>
+              </div>
+            </Styled(div)>
+          </LaunchDetail>
+        </RenderedRoute>
+      </Routes>
+    </Router>
+  </MemoryRouter>
+</Provider>
+`;
